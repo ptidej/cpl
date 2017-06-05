@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+	compile 'org.apache.bcel:bcel:6.0'
+
+    compile files('lib/cfparse.jar')
+    
+    testImplementation 'junit:junit:4.12'
+}
+
+
+
